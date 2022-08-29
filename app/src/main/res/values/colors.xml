@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <color name="eq_back">#212121</color>
+    <color name="eq_red">#AE74EC</color>
+
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="exo_bottom_bar_background">#85000000</color>
+    <color name="exo_black_opacity_30" tools:keep="@color/exo_black_opacity_30">#00000000</color>
+    <color name="green">#3DDC84</color>
+
+
+
+
+
+    <color name="colorPrimaryDarkShade">#213752</color>
+    <color name="colorPrimaryDarkShadeDisabled">#31465F</color>
+
+    <color name="colorBlue">#166ED2</color>
+    <color name="colorGrey">#AEAEB0</color>
+    <color name="colorWhite">#FFFFFF</color>
+
+
+    <color name="colorBlackText">#202027</color>
+
+    <color name="colorGrayUnderline">#CACACA</color>
+    <color name="colorBackground">#FAFAFA</color>
+
+    <color name="colorAlertRed">#ED344E</color>
+
+
+
+
+
+    <color name="actionbar_menu_icon">#454545</color>
+    <color name="crop_image_view_background">#BB000000</color>
+    <color name="circle_black_background">#66000000</color>
+
+    <color name= "SurfaceColor">#FFCC00</color>
+    <color name="BackwardColorHeavy">#B0000000</color>
+    <color name="backward_color">#DD000000</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">@color/flatOrange</color>
+    <color name = "Gray">#22000000</color>
+    <color name="NearlyWhite">#44ffffff</color>
+    <color name="flatRed">#FF3B30</color>
+    <color name="FlatGreen">#4CD964</color>
+    <color name="flatOrange">#FF9500</color>
+    <color name="FlatYellow">#FFCC00</color>
+    <color name="FlatTealBlue">#5AC8FA</color>
+    <color name="flatPurple">#5856D6</color>
+    <color name="FlatPink">#FF2D55</color>
+    <color name="flatBlue">#007AFF</color>
+
+    <color name="HeavyOrange">#AF8700</color>
+    <color name="HeavyRed">#770000</color>
+    <color name="HeavyTealBlue">#0058AA</color>
+    <color name="HeavyYellow">#802D00</color>
+    <color name="HeavyGreen">#005800</color>
+    <color name="HeavyBlue">#00218B</color>
+    <color name="HeavyPurple">#162EA6</color>
+    <color name="HeavyPink">#B60024</color>
+
+    <item name="yellow" type="color">#F7B500</item>
+    <item name="yellow_dark" type="color">#AC7E00</item>
+    <item name="FlatWhite" type="color">#F5F5F5</item>
+    <item name="SplashBackground" type ="color">#f0f0f0</item>
+    <integer-array name="androidcolors">
+        <item>@color/yellow</item>
+        <item>@color/yellow_dark</item>
+    </integer-array>
+    <color name="waveform_selected">#FB5606</color>
+    <color name="waveform_unselected">#A7B2B9</color>
+    <color name="waveform_unselected_bkgnd_overlay">#A1725E</color>
+    <color name="selection_border">#ffffff</color>
+    <color name="playback_indicator">#ffff66</color>
+    <color name="grid_line">#6D6D6D</color>
+    <color name="timecode">#000000</color>
+    <color name="timecode_shadow">#aa000000</color>
+    <color name="md_bottom_sheet_text_color">@color/FlatWhite</color>
+    <color name="background_panel_color">#080808</color>
+    <color name="library_back_color">#FB181818</color>
+    <color name="library_back_color_dd">#DD181818</color>
+    <color name="library_back_color_88">#88181818</color>
+    <color name="shuffle_panel_color">#22FFFFFF</color>
+    <color name="color_aaa">#aaa</color>
+    <color name="white_flat_blue">#DBF0FF</color>
+
+    <!--grey 300-->
+    <color name="ic_launcher_background">#E0E0E0</color>
+
+    <color name="twenty_percent_black_overlay">#34000000</color>
+    <color name="fifty_percent_black_overlay">#88000000</color>
+
+    <color name="app_shortcut_default_foreground">@color/flatBlue</color>
+    <color name="app_shortcut_default_background">@color/FlatTealBlue</color>
+    <color name="lyric_end_color">#DD080808</color>
+    <color name="lyric_center_color">#66080808</color>
+    <color name="background_artist_header_color">#88080808</color>
+    <color name="success_stroke_color">#A5DC86</color>
+
+    <color name="rsbColorSeekBarDefault">#c3c3c3</color>
+    <color name="rsbColorThumbPressed">#FFE7E7E7</color>
+    <color name="rsbColorThumbDefault">#FFFFFF</color>
+    <color name="rsbColorThumbBorder">#FFD7D7D7</color>
+    <color name="colorProgress">#ffffbb33</color>
+    <color name="FloatingButtonColor">#FBFFBD</color>
+    <color name="SplashColor">@android:color/black</color>
+
+    <color name="Tomato">#ff6347</color>
+    <color name="lightOrange">#ffaa00</color>
+    <color name="lightGreen">#3dcc3d</color>
+    <color name="lightBlue">#00aaff</color>
+    <color name="lightTealBlue">#2bd9d9</color>
+    <color name="LightYellow">#ffd426</color>
+
+    <color name="blueStart">#4EFFF3</color>
+    <color name="blueEnd">#0ca6f9</color>
+    <color name="purpleStart">#a369ff</color>
+    <color name="purpleEnd">#0e56ff</color>
+    <color name="roseStart">#FF6A00</color>
+    <color name="roseEnd">#ef0276</color>
+    <color name="greenStart">#a7f56e</color>
+    <color name="greenEnd">#11c612</color>
+    <color name="flatGreenEnd">#00BF84</color>
+    <color name="gradient_grey_start">#494949</color>
+    <color name="md_grey_black">#1F1F1F</color>
+
+
+    <color name="__picker_common_primary">#ffe1e1e1</color>
+    <color name="__picker_item_photo_border_n">#33ffffff</color>
+    <color name="__picker_item_photo_border_selected">#ff99cc00</color>
+
+    <color name="ball1">#ffffd91c</color>
+    <color name="ball2">#ffff4b4a</color>
+    <color name="ball3">#ff3d8eff</color>
+    <color name="blue_selected">#ff349efe</color>
+
+    <color name="browser_actions_bg_grey">#fff5f5f5</color>
+    <color name="browser_actions_divider_color">#1e000000</color>
+    <color name="browser_actions_text_color">#de000000</color>
+    <color name="browser_actions_title_color">#ff646464</color>
+
+    <color name="colorAccentDark">#ff0f60cf</color>
+    <color name="colorText">#ffffffff</color>
+
+    <color name="cropiwa_default_border_color">#fff5f5f5</color>
+    <color name="cropiwa_default_corner_color">#fff5f5f5</color>
+    <color name="cropiwa_default_grid_color">#ffffffff</color>
+    <color name="cropiwa_default_overlay_color">#af000000</color>
+    <color name="dark_grey">#ff1c1d21</color>
+    <color name="dark_grey_more">#ff232323</color>
+
+    <color name="gnt_ad_green">#ff3a6728</color>
+
+    <color name="loader_defalut">#44ffffff</color>
+    <color name="loader_selected">#ffffffff</color>
+
+    <color name="overlay_background_4">#a4ffffff</color>
+
+    <color name="progress_bar_bg_light">#ff787878</color>
+
+    <color name="text_second">#ff888893</color>
+    <color name="tool_bg">#ff303030</color>
+
+    <color name="unselected_color">#ff7d7d7d</color>
+    <color name="white_blur">#ffc8c8c8</color>
+
+    <color name="def_statusbar">#FF3737</color>
+
+    <color name="theme2">#03005E</color>
+
+
+
+    <color name="flat_clr_1">#fc0303</color>
+    <color name="flat_clr_2">#eb8934</color>
+    <color name="flat_clr_3">#e8eb34</color>
+    <color name="flat_clr_4">#8feb34</color>
+    <color name="flat_clr_5">#3dd90d</color>
+    <color name="flat_clr_6">#3b6e53</color>
+    <color name="flat_clr_7">#57615c</color>
+    <color name="flat_clr_8">#39998c</color>
+    <color name="flat_clr_9">#10e3c7</color>
+    <color name="flat_clr_10">#10abe3</color>
+    <color name="flat_clr_11">#1045e3</color>
+    <color name="flat_clr_12">#3e11ad</color>
+    <color name="flat_clr_13">#a216ba</color>
+    <color name="flat_clr_14">#ba1666</color>
+    <color name="flat_clr_15">#b31013</color>
+    <color name="flat_clr_16">#ffb780</color>
+    <color name="flat_clr_17">#37b888</color>
+    <color name="flat_clr_18">#8bb837</color>
+    <color name="flat_clr_19">#4e6e13</color>
+    <color name="flat_clr_20">#ff8080</color>
+
+
+    <color name="grad_clr_1">#4C0000</color>
+    <color name="grad_clr_2">#000557</color>
+    <color name="grad_clr_3">#F42703</color>
+    <color name="grad_clr_4">#FF5722</color>
+    <color name="grad_clr_5">#27D61A</color>
+    <color name="grad_clr_6">#F44336</color>
+    <color name="grad_clr_7">#FFC022</color>
+    <color name="grad_clr_8">#AFC6E3</color>
+    <color name="grad_clr_9">#15355C</color>
+    <color name="grad_clr_10">#D9FF50</color>
+    <color name="grad_clr_11">#4CAF50</color>
+    <color name="grad_clr_12">#D125FF</color>
+    <color name="grad_clr_13">#842A9C</color>
+    <color name="grad_clr_14">#4CC133</color>
+    <color name="grad_clr_15">#4CC133</color>
+    <color name="grad_clr_16">#F8E3C3</color>
+    <color name="grad_clr_17">#115777</color>
+    <color name="grad_clr_18">#770B8A</color>
+    <color name="grad_clr_19">#F6F6F6</color>
+    <color name="grad_clr_20">#5716B3</color>
+
+
+    <color name="picto_clr1">#1C55AB</color>
+    <color name="picto_clr2">#394D9A</color>
+    <color name="picto_clr3">#5EFFFB</color>
+    <color name="picto_clr4">#2B8928</color>
+    <color name="picto_clr5">#563348</color>
+    <color name="picto_clr6">#7431CE</color>
+    <color name="picto_clr7">#1B1645</color>
+    <color name="picto_clr8">#09D9DB</color>
+    <color name="picto_clr9">#B0132E</color>
+    <color name="picto_clr10">#F2B073</color>
+    <color name="picto_clr11">#262F2C</color>
+    <color name="picto_clr12">#EF122B</color>
+    <color name="picto_clr13">#B8280E</color>
+    <color name="picto_clr14">#FD7529</color>
+    <color name="picto_clr15">#38468D</color>
+    <color name="picto_clr16">#6FD912</color>
+    <color name="picto_clr17">#1A0080</color>
+    <color name="picto_clr18">#FF6B01</color>
+    <color name="picto_clr19">#7D1B1A</color>
+    <color name="picto_clr20">#841595</color>
+    <color name="picto_clr21">#E30F01</color>
+    <color name="picto_clr22">#12683B</color>
+    <color name="picto_clr23">#CF2E59</color>
+    <color name="picto_clr24">#72BCFD</color>
+    <color name="black_70">#B3000000</color>
+
+
+</resources>

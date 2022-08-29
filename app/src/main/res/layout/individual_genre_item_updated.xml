@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="data"
+            type="com.statusmaker_photoeditor_music.videoplayer.radio.data.network.responses.Radio" />
+    </data>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="210dp"
+        android:layout_height="80dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="24dp"
+        app:cardBackgroundColor="#70000000"
+        android:orientation="horizontal"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="0dp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop"
+                android:src="@{data.image}"  />
+
+            <ImageView
+                android:visibility="visible"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:background="#60000000" />
+
+        </RelativeLayout>
+
+
+        <TextView
+            style="@style/TextAppearance.MdcTypographyStyles.Headline4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_margin="15dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="@{data.name}"
+            tools:text="@string/rate_us" />
+
+
+    </androidx.cardview.widget.CardView>
+
+</layout>

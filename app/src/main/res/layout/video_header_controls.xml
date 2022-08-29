@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingTop="7dp"
+    android:paddingBottom="7dp"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp">
+
+    <com.getbase.floatingactionbutton.FloatingActionsMenu
+        android:id="@+id/floating"
+        android:layout_width="wrap_content"
+        app:fab_expandDirection="right"
+        app:fab_addButtonSize="mini"
+        app:fab_addButtonColorNormal="#80000000"
+        app:fab_addButtonColorPressed="@color/black"
+        app:fab_addButtonPlusIconColor="@color/white"
+        android:layout_height="wrap_content">
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_share"
+            app:fab_colorPressed="@color/black"
+            app:fab_colorNormal="#80000000"
+            app:fab_icon="@drawable/ic_share_white"
+            app:fab_size="mini"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_delete"
+            app:fab_colorPressed="@color/black"
+            app:fab_colorNormal="#80000000"
+            app:fab_icon="@drawable/ic_delete_black_24dp"
+            app:fab_size="mini"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_lock"
+            app:fab_colorPressed="@color/black"
+            app:fab_colorNormal="#80000000"
+            app:fab_icon="@drawable/headphone_ic"
+            app:fab_size="mini"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_back"
+            app:fab_colorPressed="@color/black"
+            app:fab_colorNormal="#80000000"
+            app:fab_icon="@drawable/ic_back"
+            app:fab_size="mini"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+</RelativeLayout>

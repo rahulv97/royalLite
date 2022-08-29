@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "316053548198",
+    "project_id": "royalplayer-lite",
+    "storage_bucket": "royalplayer-lite.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:316053548198:android:17af4164260ac8c22d1867",
+        "android_client_info": {
+          "package_name": "com.royalplayer.lite"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "316053548198-o5pg7mft1pubc033u7lgcq0nadhiarol.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDL06zSshUtC6rO92qhY25wxmBT0gsGgDQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "316053548198-o5pg7mft1pubc033u7lgcq0nadhiarol.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

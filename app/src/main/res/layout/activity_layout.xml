@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:visibility="visible"
+    android:id="@+id/appRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.statusmaker_photoeditor_music.videoplayer.music_player.ui.AppActivity">
+    <!-- back_wall_containerswitch_page_containeriner chứa layout khung nền-->
+    <FrameLayout
+        android:layout_above="@+id/mus_footer"
+        android:id="@+id/back_wall_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+    <!-- container_of_containerswitch_page_containeriner cha của switch_page_containeriner :
+           fragment,control,status_bar,navigation_bar -->
+    <FrameLayout
+        android:layout_above="@+id/mus_footer"
+        android:id="@+id/layer_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        tools:visibility="visible"
+
+        >
+        <!--switch_page_container inner đảm nhiệm switching các trang fragment -->
+        <FrameLayout
+            android:id="@+id/child_layer_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/bottom_navigation_parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@drawable/gradient_bg"
+
+            >
+            <View
+                android:id="@+id/divider_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/fifty_percent_black_overlay"
+                app:layout_constraintTop_toTopOf="parent"
+                />
+
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/bottom_navigation_view"
+                android:layout_width="280dp"
+                android:layout_height="50dp"
+                android:layout_gravity="bottom"
+                android:background="#0000"
+                app:elevation="0dp"
+                app:itemIconSize="28dp"
+                app:itemIconTint="@color/bottom_navigation_icon_color"
+                app:itemTextColor="@color/bottom_navigation_icon_color"
+                app:labelVisibilityMode="unlabeled"
+                app:layout_constraintEnd_toStartOf="@+id/imageView4"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/divider_bottom"
+
+                app:menu="@menu/bottom_navigation_menu" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/radio"
+                android:layout_marginRight="30dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+        </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/mus_footer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <include layout="@layout/footer_layout" />
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

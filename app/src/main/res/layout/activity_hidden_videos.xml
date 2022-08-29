@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/hidden_videos_parent"
+    tools:context=".HiddenVideos">
+
+    <RelativeLayout
+        android:id="@+id/header_main"
+        android:background="@drawable/gradient_bg"
+        android:layout_width="match_parent" android:layout_height="50dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:text="Hidden Videos"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/no_hidden_video"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="No Hidden Videos"
+        android:textColor="@color/white"
+        android:textSize="25dp"/>
+
+    <com.mlsdev.animatedrv.AnimatedRecyclerView
+        app:animationDuration="600"
+        app:layoutAnimation="@anim/layout_animation_from_bottom"
+        app:layoutManagerOrientation="vertical"
+        android:layout_below="@id/header_main"
+        android:layout_above="@id/adView"
+        android:paddingRight="16dp"
+        android:id="@+id/file_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        ads:adSize="BANNER"
+        android:layout_alignParentBottom="true"
+        ads:adUnitId="@string/admob_banner_id"/>
+
+
+</RelativeLayout>

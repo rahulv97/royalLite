@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:background="@drawable/video_list_bg"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="15dp"
+    android:id="@+id/thumb_rel"
+    >
+
+    <RelativeLayout
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.cardview.widget.CardView
+            app:cardCornerRadius="10dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/thumb_card"
+            android:layout_width="60dp"
+            android:layout_height="60dp">
+
+        <ImageView
+            android:scaleType="centerCrop"
+            android:id="@+id/thumb_img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_toLeftOf="@id/more_op"
+            android:id="@+id/thumb_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@id/thumb_card"
+            android:textColor="@color/white" />
+
+        <ImageView
+            android:id="@+id/more_op"
+            android:src="@drawable/ic_moree"
+            android:layout_width="35dp"
+            android:layout_height="60dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" />
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

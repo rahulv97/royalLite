@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:background="@color/transparent">
+
+    <RelativeLayout
+        android:background="@drawable/dialog_bg"
+        android:layout_margin="20dp"
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Do you wish to resume from where you stopped?"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            android:id="@+id/ques"/>
+
+        <TextView
+            android:layout_toLeftOf="@id/resume_vid"
+            android:layout_marginRight="40dp"
+            android:id="@+id/start_over"
+            android:textSize="15dp"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start Over"
+            android:layout_below="@id/ques"
+            android:layout_marginTop="25dp"/>
+
+        <TextView
+            android:id="@+id/resume_vid"
+            android:textSize="15dp"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Resume"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/ques"
+            android:layout_marginTop="25dp"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

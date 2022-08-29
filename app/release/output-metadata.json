@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "artifactType": {
+    "type": "APK",
+    "kind": "Directory"
+  },
+  "applicationId": "com.statusmaker_photoeditor_music.videoplayer",
+  "variantName": "processReleaseResources",
+  "elements": [
+    {
+      "type": "SINGLE",
+      "filters": [],
+      "versionCode": 101,
+      "versionName": "101.0.0",
+      "outputFile": "app-release.apk"
+    }
+  ]
+}

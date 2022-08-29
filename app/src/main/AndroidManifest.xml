@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.royalplayer.lite">
+
+    <uses-sdk tools:overrideLibrary="com.google.vr.widgets.common, com.google.vr.sdk.widgets.pano" />
+
+    <uses-feature android:glEsVersion="0x00020000" />
+
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.SET_WALLPAPER" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+<!--    <uses-permission-->
+<!--        android:name="android.permission.MANAGE_EXTERNAL_STORAGE"-->
+<!--        tools:ignore="ScopedStorage" />-->
+
+    <uses-feature
+        android:name="android.hardware.faketouch"
+        android:required="false" />
+
+    <application
+        android:name="com.statusmaker_photoeditor_music.videoplayer.music_player.App"
+        android:allowBackup="true"
+        android:extractNativeLibs="true"
+        android:icon="@drawable/royal_player_logo"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@drawable/royal_player_logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppThemeNoWallpaper"
+        android:usesCleartextTraffic="true"
+        tools:ignore="GoogleAppIndexingWarning"
+        tools:replace="android:theme,android:supportsRtl,android:name,android:label,android:roundIcon,android:icon">
+        <activity
+            android:name="com.statusmaker_photoeditor_music.videoplayer.SpinnerActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.statusmaker_photoeditor_music.videoplayer.CustImageSelectActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.statusmaker_photoeditor_music.videoplayer.ShowThemesActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.statusmaker_photoeditor_music.videoplayer.ThemeDashboardActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.statusmaker_photoeditor_music.videoplayer.ThemeActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.statusmaker_photoeditor_music.videoplayer.MoreOptionsActivity"
+            android:theme="@style/MyOwnStyle" />
+        <activity
+            android:name="com.statusmaker_photoeditor_music.videoplayer.live_tv.MainActivity"
+            android:screenOrientation="sensorLandscape" />
+        <activity android:name="com.statusmaker_photoeditor_music.videoplayer.live_tv.TVDashboard" />
+        <activity android:name="com.statusmaker_photoeditor_music.videoplayer.EqualizerActivity" />
+        <activity
+            android:name="com.statusmaker_photoeditor_music.videoplayer.HiddenVideos"
+            android:theme="@style/MyOwnStyle" />
+        <activity
+            android:name="com.statusmaker_photoeditor_music.videoplayer.AppLockPatternActivity"
+            android:theme="@style/MyOwnStyle" />
+
+        <activity
+            android:name="com.statusmaker_photoeditor_music.videoplayer.VideoSelectorActivity"
+            android:theme="@style/MyOwnStyle" />
+        <activity
+            android:name="com.statusmaker_photoeditor_music.videoplayer.VideoDownloaderActivity"
+            android:theme="@style/MyOwnStyle" />
+        <activity
+            android:name="com.statusmaker_photoeditor_music.videoplayer.SplashScreen"
+            android:theme="@style/MyOwnStyle">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.statusmaker_photoeditor_music.videoplayer.MainActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|screenLayout|smallestScreenSize|uiMode"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:supportsPictureInPicture="true"
+            android:theme="@style/MyOwnStyle">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="content" />
+                <data android:scheme="file" />
+                <data android:mimeType="video/*" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.statusmaker_photoeditor_music.videoplayer.music_player.ui.AppActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyOwnStyle"
+            android:windowSoftInputMode="adjustPan|adjustResize"
+            tools:ignore="LockedOrientationActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="content" />
+                <data android:mimeType="audio/*" />
+                <data android:mimeType="application/ogg" />
+                <data android:mimeType="application/x-ogg" />
+                <data android:mimeType="application/itunes" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="file" />
+                <data android:mimeType="audio/*" />
+                <data android:mimeType="application/ogg" />
+                <data android:mimeType="application/x-ogg" />
+                <data android:mimeType="application/itunes" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="http" />
+                <data android:mimeType="audio/*" />
+                <data android:mimeType="application/ogg" />
+                <data android:mimeType="application/x-ogg" />
+                <data android:mimeType="application/itunes" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.cyanogenmod.eleven.AUDIO_PLAYER" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PICK" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.OPENABLE" />
+
+                <data android:mimeType="vnd.android.cursor.dir/audio" />
+            </intent-filter>
+            <intent-filter
+                android:scheme="http"
+                tools:ignore="AppLinkUrlError">
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="vnd.android.cursor.dir/playlist" />
+                <data android:mimeType="vnd.android.cursor.dir/albums" />
+                <data android:mimeType="vnd.android.cursor.dir/artists" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name="com.statusmaker_photoeditor_music.videoplayer.music_player.service.MusicService"
+            android:enabled="true" />
+
+        <meta-data
+            android:name="android.max_aspect"
+            android:value="2.1" />
+
+        <receiver android:name="com.statusmaker_photoeditor_music.videoplayer.music_player.service.MediaButtonIntentReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_BUTTON" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.statusmaker_photoeditor_music.videoplayer.music_player.appwidgets.BootReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.statusmaker_photoeditor_music.videoplayer.music_player.appwidgets.AppWidgetBig"
+            android:exported="false"
+            android:label="@string/app_widget_big_name">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/app_widget_big_info" />
+        </receiver>
+        <receiver
+            android:name="com.statusmaker_photoeditor_music.videoplayer.music_player.appwidgets.AppWidgetClassic"
+            android:exported="false"
+            android:label="@string/app_widget_classic_name">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/app_widget_classic_info" />
+        </receiver>
+        <receiver
+            android:name="com.statusmaker_photoeditor_music.videoplayer.music_player.appwidgets.AppWidgetSmall"
+            android:exported="false"
+            android:label="@string/app_widget_small_name">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/app_widget_small_info" />
+        </receiver>
+        <receiver
+            android:name="com.statusmaker_photoeditor_music.videoplayer.music_player.appwidgets.AppWidgetCard"
+            android:exported="false"
+            android:label="@string/app_widget_card_name">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/app_widget_card_info" />
+        </receiver>
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="@string/admob_app_id" />
+
+
+
+
+
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <activity
+            android:name="com.karumi.dexter.DexterActivity"
+            android:theme="@style/Dexter.Internal.Theme.Transparent" />
+
+        <provider
+            android:name="com.squareup.picasso.PicassoProvider"
+            android:authorities="com.royalplayer.lite.com.squareup.picasso"
+            android:exported="false"
+            tools:replace="android:authorities" />
+
+        <activity
+            android:name="com.statusmaker_photoeditor_music.videoplayer.statussaver.activity.LoginActivity"
+            android:theme="@style/MyOwnStyle" />
+        <activity
+            android:name="com.statusmaker_photoeditor_music.videoplayer.statussaver.activity.AboutUsActivity"
+            android:theme="@style/MyOwnStyle" />
+        <activity
+            android:name="com.statusmaker_photoeditor_music.videoplayer.statussaver.activity.FacebookActivity"
+            android:theme="@style/MyOwnStyle" />
+        <activity
+            android:name="com.statusmaker_photoeditor_music.videoplayer.statussaver.activity.TikTokActivity"
+            android:theme="@style/MyOwnStyle" />
+        <activity
+            android:name="com.statusmaker_photoeditor_music.videoplayer.statussaver.activity.WhatsappActivity"
+            android:theme="@style/MyOwnStyle" />
+        <activity
+            android:name="com.statusmaker_photoeditor_music.videoplayer.statussaver.activity.InstagramActivity"
+            android:theme="@style/MyOwnStyle" />
+        <activity
+            android:name="com.statusmaker_photoeditor_music.videoplayer.statussaver.activity.FullViewActivity"
+            android:theme="@style/MyOwnStyle" />
+        <activity
+            android:name="com.statusmaker_photoeditor_music.videoplayer.statussaver.activity.LikeeActivity"
+            android:theme="@style/MyOwnStyle" />
+        <activity
+            android:name="com.statusmaker_photoeditor_music.videoplayer.statussaver.activity.SplashScreen"
+            android:theme="@style/MyOwnStyle" />
+        <activity
+            android:name="com.statusmaker_photoeditor_music.videoplayer.statussaver.activity.GalleryActivity"
+            android:theme="@style/MyOwnStyle" />
+        <activity
+            android:name="com.statusmaker_photoeditor_music.videoplayer.statussaver.activity.MainActivity"
+            android:theme="@style/MyOwnStyle">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="image/*" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="text/plain" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND_MULTIPLE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="image/*" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.statusmaker_photoeditor_music.videoplayer.statussaver.activity.WebviewAcitivity"
+            android:theme="@style/MyOwnStyle" />
+        <activity
+            android:name="com.statusmaker_photoeditor_music.videoplayer.statussaver.activity.TwitterActivity"
+            android:theme="@style/MyOwnStyle" />
+        <activity
+            android:name="com.statusmaker_photoeditor_music.videoplayer.statussaver.activity.RoposoActivity"
+            android:theme="@style/MyOwnStyle" />
+        <activity
+            android:name="com.statusmaker_photoeditor_music.videoplayer.statussaver.activity.ShareChatActivity"
+            android:theme="@style/MyOwnStyle" />
+        <activity
+            android:name="com.statusmaker_photoeditor_music.videoplayer.statussaver.activity.SnackVideoActivity"
+            android:theme="@style/MyOwnStyle" />
+
+        <service
+            android:name="com.statusmaker_photoeditor_music.videoplayer.statussaver.MyFirebaseMessagingService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name="com.statusmaker_photoeditor_music.videoplayer.radio.MainActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/Theme.MaterialComponents.Light.NoActionBar" />
+        <activity
+            android:name="com.statusmaker_photoeditor_music.videoplayer.radio.ui.SplashScreenActivity"
+            android:screenOrientation="portrait" /> <!-- AdMob App ID: ca-app-pub-3940256099942544~3347511713 -->
+        <service android:name="com.statusmaker_photoeditor_music.videoplayer.radio.radio.RadioService" />
+
+        <receiver android:name="androidx.media.session.MediaButtonReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_BUTTON" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.yalantis.ucrop.UCropActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+    </application>
+
+</manifest>

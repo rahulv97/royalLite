@@ -1,0 +1,6 @@
+include ':equalizer'
+include ':videomake'
+include ':videodownloader'
+include ':app'
+rootProject.name = "Video Player"
+include ':radio'
